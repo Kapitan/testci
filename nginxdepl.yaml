@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: ng
-        image: kapitanmf/nginx:1
+        image: CONTAINER_IMAGE
         ports:
         - containerPort: 80
