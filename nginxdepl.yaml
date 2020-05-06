@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ng-deployment
+  labels:
+    app: ng
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ng
+  template:
+    metadata:
+      labels:
+        app: ng
+    spec:
+      containers:
+      - name: ng
+        image: kapitanmf/nginx:1
+        ports:
+        - containerPort: 80
