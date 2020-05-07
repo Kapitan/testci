@@ -19,3 +19,4 @@ using aws pipe line
   docker push
   add aws credentials using env vars
   kubectl apply using file from git
+
